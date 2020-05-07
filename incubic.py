@@ -2,14 +2,11 @@ import math
 
 f = float(input("Number of frames: "))
 b = int(input("Number of balls: "))
-x_squared = f*f
-a = b / x_squared
+a = b/ (f**3)
 
 lastnum = b + 1
 
 for n in range(1, lastnum):
-    intermed1 = n - b
-    intermed2 = intermed1 / (-a)
-    intermed3 = math.sqrt(intermed2)
-    F = -intermed3 + f
+    intermed1 = n / a
+    F = intermed1 ** (1/3)
     print("Ball #", n, "in frame ", F)

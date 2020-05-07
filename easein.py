@@ -7,7 +7,7 @@ b = int(input("Number of balls: "))
 B = ((2.0 * pi)/(4.0 * f)) #finding the value of b in the equation
 lastnum = b + 1
 
-for n in range(0, lastnum):
+for n in range(1, lastnum):
     intermed1 = (n / b)
     intermed2 = intermed1 - 1
     intermed3 = math.asin(intermed2)

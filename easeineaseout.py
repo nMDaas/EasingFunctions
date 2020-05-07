@@ -7,7 +7,7 @@ b = int(input("Number of balls: "))
 B = ((2.0 * pi)/(2.0 * f)) #finding the value of b in the equation
 lastnum = b + 1
 
-for n in range(0, lastnum):
+for n in range(1, lastnum):
     S = 2 * n
     intermed1 = S / b
     intermed2 = intermed1 - 1
