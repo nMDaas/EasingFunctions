@@ -12,4 +12,4 @@ for n in range(1, lastnum):
     sinpart = math.sin((a*(22/7)*((n-f)*-1))/(2*f))
     asinpart = a * sinpart
     B = asinpart + (b/2)
-    print("In frame ", n, " place ball #", B)
+    print("In frame ", n, " place ball at y=", B)
