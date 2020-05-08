@@ -5,7 +5,7 @@ b = int(input("Number of balls: "))
 x_squared = f*f
 a = b / x_squared
 
-lastnum = b + 1
+lastnum = b + 2
 
 for n in range(1, lastnum):
     intermed1 = n - b

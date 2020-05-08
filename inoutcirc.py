@@ -7,7 +7,7 @@ evencheck = b % 2
 
 if (evencheck == 0):
     lastnum = int((b/2) + 1)
-    for n in range(0, lastnum):
+    for n in range(1, lastnum):
         intermed1 = n - b
         intermed2 = intermed1/(-1)
         intermed3 = intermed2 ** 2
@@ -20,7 +20,7 @@ if (evencheck == 0):
         if n == (lastnum - 1):
             point_halfframe = F
     print("-----ease out now----")
-    for n in range(0, lastnum):
+    for n in range(1, lastnum):
         intermed1 = n ** 2
         intermed2 = intermed1 / (b ** 2)
         intermed3 = intermed2 - 1
@@ -35,7 +35,7 @@ if (evencheck == 0):
 else:
     lastnum = int((b/2) + 1.5)
     otherlastnum = int((b/2) + 0.5)
-    for n in range(0, lastnum):
+    for n in range(1, lastnum):
         intermed1 = n - b
         intermed2 = intermed1/(-1)
         intermed3 = intermed2 ** 2
@@ -56,5 +56,5 @@ else:
         intermed5 = intermed4 * (f ** 2)
         intermed6 = math.sqrt(intermed5) * (-1)
         F = intermed6 + f + point_halfframe
-        n = n + ((b/2)+1.5)
+        n = n + ((b/2)+0.5)
         print("Ball #", n, "in frame ", F)

@@ -8,7 +8,7 @@ pi = 22/7
 evencheck = f % 2
 if (evencheck == 0):
     lastnum = int((f/2) + 1)
-    for n in range(0, lastnum):
+    for n in range(1, lastnum):
         a = (b/2)*((1/2) ** (((-(n-f))/F)-1))
         sinpart = math.sin((a*(22/7)*((n-f)*-1))/(2*f))
         asinpart = a * sinpart
@@ -17,7 +17,7 @@ if (evencheck == 0):
         if n == (lastnum - 1):
             point_halfframe = B
     print("-----ease out now----")
-    for n in range(0, lastnum):
+    for n in range(1, lastnum):
         a = (b/2)*((1/2) ** ((n/F)-1))
         sinpart = math.sin((a*(22/7)*n)/(2*f))
         asinpart = a * sinpart
@@ -27,7 +27,7 @@ if (evencheck == 0):
 else:
     lastnum = int((f/2) + 1.5)
     otherlastnum = int((f/2) + 0.5)
-    for n in range(0, lastnum):
+    for n in range(1, lastnum):
         a = (b/2)*((1/2) ** (((-(n-f))/F)-1))
         sinpart = math.sin((a*(22/7)*((n-f)*-1))/(2*f))
         asinpart = a * sinpart
