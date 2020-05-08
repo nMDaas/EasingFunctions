@@ -7,7 +7,6 @@ a = b / x_squared
 check = []
 
 evencheck = b % 2
-
 if (evencheck == 0):
     lastnum = int((b/2) + 1)
     for n in range(1, lastnum):

@@ -5,7 +5,6 @@ b = int(input("Number of balls: "))
 check = []
 
 evencheck = b % 2
-
 if (evencheck == 0):
     lastnum = int((b/2) + 1)
     a_intermed = b + 1

@@ -6,7 +6,6 @@ F = int(input("Factor of elasticity (the higher, the greater): "))
 pi = 22/7
 
 lastnum = f + 1
-
 for n in range(1, lastnum):
     a = (b/2)*((1/2) ** ((n/F)-1))
     sinpart = math.sin((a*(22/7)*n)/(2*f))
